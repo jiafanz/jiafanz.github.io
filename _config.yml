@@ -10,6 +10,5 @@ baseurl: ""
 
 permalink: pretty
 
-# Build settings
 kramdown:
     input: GFM
