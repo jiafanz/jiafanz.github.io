@@ -1,3 +1,8 @@
+---
+layout: post
+title: "Tips for Rouge Toolkit"
+---
+
 **ROUGE Toolkit**[^1]是一个用于评价自动摘要或机器翻译效果的工具箱，也就是将不同系统生成的摘要（翻译）与人工生成的标准摘要（翻译）作对比。由于原作者并没有提供详细的使用文档，开始入门这个工具时一点头绪也没有。。。好在发现了这篇文章*Basics of Setting up ROUGE Toolkit for Evaluation of Summarization Tasks*[^2]，提供了有用的入门指导。
 
 但是，由于ROUGE只接受英文作为输入数据，所以对于中文文本无法进行计算。解决的方法是：
