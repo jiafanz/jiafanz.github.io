@@ -96,28 +96,44 @@ blockquote {
     }
 }
 
-// Code formatting
-pre, code {
-    border: 1px solid $line-color;
-    border-radius: 3px;
-    background-color: $dark-background;
-    font-family: monospace;
-    font-size: $small-font-size;
-}
-
-code {
-    padding: 1px 5px;
-}
-
+// Code
+code,
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+code {
+  padding: .25em .5em;
+  font-size: 85%;
+  color: #bf616a;
+  background-color: #f9f9f9;
+  border-radius: 3px;
+}
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: .8rem;
+  line-height: 1.4;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #f9f9f9;
+}
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+.highlight pre {
+  margin-bottom: 0;
 }
 
 // Icons
