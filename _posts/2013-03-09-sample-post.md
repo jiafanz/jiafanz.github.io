@@ -67,6 +67,14 @@ for i in range(10):
     print i
 ~~~
 
+```c
+#include <stdio.h>
+int main()
+{
+    print("test test");
+    return 0;
+}
+```
 
 
 ### An h3 header ###
