@@ -73,12 +73,12 @@ for i in range(10):
 
 Now a nested list:
 
- 1. First, get these ingredients:
-      * carrots
-      * celery
-      * lentils
- 2. Boil some water.
- 3. Dump everything in the pot and follow
+1. First, get these ingredients:
+    * carrots
+    * celery
+    * lentils
+2. Boil some water.
+3. Dump everything in the pot and follow
     this algorithm:
 
         find wooden spoon
@@ -98,8 +98,6 @@ Here's a link to [a website](http://foo.bar), to a [local
 doc](local-doc.html), and to a [section heading in the current
 doc](#an-h2-header). Here's a footnote [^1].
 
-[^1]: Footnote text goes here.
-
 Tables can look like this:
 
 | Left-aligned | Center-aligned | Right-aligned |
@@ -113,9 +111,9 @@ A horizontal rule follows.
 
 and images can be specified like so:
 
-![example image](http://ww4.sinaimg.cn/large/718a0257gw1ez2zkrq98ej20am0dndhs.jpg "An exemplary image")
+![example image](http://r-statistics.co/screenshots/ggplot_2.png "An exemplary image")
 
-Inline math equations go in like so: \$e = mc^2\$ . Display
+Inline math equations go in like so: $e = mc^2$. Display
 math should get its own line and be put in in double-dollarsigns:
 
 $$
@@ -124,3 +122,5 @@ $$
 
 And note that you can backslash-escape any punctuation characters
 which you wish to be displayed literally, ex.: \`foo\`, \*bar\*, etc.
+
+[^1]: Footnote text goes here.
