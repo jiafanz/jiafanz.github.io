@@ -1,6 +1,4 @@
-title: Geeky corner
-description: Much-Worse Jekyll theme for academic page and blog
-sourcecode: "https://github.com/gchauras/much-worse-jekyll-theme"
+title: Jiafan Z.
 
 author:
     name: Jiafan
@@ -15,21 +13,3 @@ permalink: pretty
 # Build settings
 kramdown:
     input: GFM
-
-# Settings for comments helper
-# Set 'provider' to the comment provider you want to use.
-# Set 'provider' to false to turn commenting off globally.
-#
-comments:
-    provider:
-    disqus:
-      short_name:
-    livefyre:
-      site_id:
-    intensedebate:
-      account:
-    facebook:
-      appid:
-      num_posts: 5
-      width: 580
-      colorscheme: light

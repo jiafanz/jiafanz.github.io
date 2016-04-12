@@ -1,6 +1,7 @@
 ---
 layout: post
-title: "排序算法（学习笔记）"
+title:  "排序算法（学习笔记）"
+date:   2016-03-31
 ---
 
 ## 选择排序[^1]
@@ -205,4 +206,4 @@ public static void sort(Comparable[] a){
 ```
 
 ## Reference:
-[^1] Algorithms 4th Edition, by Robert Sedgewick and Kevin Wayne.
+[^1]: Algorithms 4th Edition, by Robert Sedgewick and Kevin Wayne.

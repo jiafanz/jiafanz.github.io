@@ -1,0 +1,308 @@
+// header
+.site-header {
+    border-bottom: 1px solid $line-color;
+    position: relative;
+    text-transform: uppercase;
+    font-size: $small-font-size;
+    @extend %clearfix;
+}
+
+.site-header, .site-header a {
+    color: $header-text-color;
+}
+.site-header a:hover {
+    color: $header-hover-color;
+    text-decoration: none;
+}
+
+.site-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    float: left;
+    letter-spacing: 1px;
+}
+
+.site-nav {
+    background: $background;
+}
+
+.site-nav ul {
+    text-align: right;
+    float: right;
+    letter-spacing: 1px;
+    list-style-type: none;
+}
+
+.site-nav .menu > li {
+    display: inline-block;
+    margin: 1em 0 0 0.75em;
+    padding: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.site-nav a {
+    display: block;
+}
+
+// Sub Menu
+.site-nav .sub-menu a {
+    display: block;
+    line-height: 1.2em;
+    padding: 4px 10px;
+    color: $header-hover-color;
+}
+
+.site-nav .sub-menu a:hover {
+    color: $header-hover-url;
+}
+.site-nav .sub-menu {
+    border-color: $line-color;
+    min-width: 265px;
+    z-index:2147483647;
+}
+.site-nav .sub-menu li.current-menu-item > a {
+    border-left: none;
+    border-right: none;
+}
+
+.sub-menu {
+    border: 1px solid $line-color;
+    display: none;
+    right: -10px;
+    padding: 4px 0 3px 0;
+    position: absolute;
+    text-align: left;
+    text-transform: none;
+    top: 28px;
+    min-width: 265px;
+    z-index:999;
+}
+
+.sub-menu li {
+    border-bottom: 0;
+    display: block;
+    height: auto;
+    margin: 3px 0;
+    padding: 0;
+    text-align: left;
+}
+
+.site-nav li:hover > .sub-menu {
+    display: block;
+}
+
+.site-nav h1 {
+    position: absolute;
+    left: -999em;
+}
+
+.site-nav {
+    float: right;
+
+    .menu-icon {
+        display: none;
+    }
+
+    .page-link {
+        color: $header-text-color;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+    }
+
+    @include media-query($mobile) {
+        position: absolute;
+        top: 9px;
+        right: 20px;
+        border: 1px solid $line-color;
+        border-radius: 5px;
+        text-align: right;
+
+        .menu-icon {
+            display: block;
+            float: right;
+            width: 1.5em;
+            height: 1.25em;
+            line-height: 0;
+            padding-top: 10px;
+            text-align: center;
+
+            > svg {
+                width: 1.25em;
+                height: 1em;
+                vertical-align: middle;
+                path {
+                    fill: $grey-dark;
+                }
+            }
+        }
+
+        .trigger {
+            clear: both;
+            display: none;
+        }
+
+        &:hover .trigger {
+            display: block;
+            padding-bottom: 5px;
+        }
+
+        .page-link {
+            display: block;
+            padding: 5px 10px;
+        }
+    }
+}
+
+// mobile header
+@include media-query($mobile) {
+    .site-nav h1 {
+        border-bottom: 1px solid $line-color;
+        cursor: pointer;
+        display: none; /* Standard. IE8+, Saf, FF3+ */
+        height: 23px;
+        left: auto;
+        margin-top: 10px;
+        position: static;
+        white-space: nowrap;
+    }
+
+    .site-nav .menu {
+        display: block;
+        left: -3px;
+        min-width: 215px;
+        padding: 4px 0;
+        position: relative;
+        right: -3px;
+        z-index: 999;
+    }
+
+    .site-nav .menu.open {
+        display: block;
+    }
+
+    .site-nav .menu li {
+        display: block;
+        margin: 0;
+        color: $header-hover-color;
+    }
+
+    .site-nav ul.menu a {
+        color: $header-hover-color;
+    }
+    .site-nav ul.menu a:hover {
+        color: $header-hover-url;
+    }
+
+    .site-nav a,
+    .site-nav li.current-menu-item > a {
+        padding: 4px 10px;
+    }
+
+    .site-nav .menu > li {
+        height: auto;
+        text-align: left;
+    }
+
+    .site-nav .sub-menu {
+        border: 0;
+        display: block;
+        position: relative;
+        min-width: 215px;
+        max-width: 215px;
+        top: auto;
+        right: auto;
+        width: auto;
+    }
+
+    .site-nav .sub-menu {
+        padding-left: 16px;
+    }
+    .site-nav .sub-menu li.current-menu-item > a {
+    }
+}
+
+// footer
+.site-footer {
+    font-size: $vsmall_font_size;
+    color: $text-light-color;
+    border-top: 1px solid $line-color;
+    padding-top: $spacing-unit;
+    float: none;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top:  0;
+    margin-bottom:$spacing-unit;
+    text-align: center;
+    @extend %clearfix;
+}
+
+.site-footer a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.site-footer a:hover {
+    color: $url-hover-color;
+    text-decoration: underline;
+}
+
+// page
+.page {
+    margin: 0 auto;
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    min-width: -webkit-calc(#{$content-min-width} - (#{$spacing-unit} * 2));
+    min-width:         calc(#{$content-min-width} - (#{$spacing-unit} * 2));
+    @include media-query($desktop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+        min-width: -webkit-calc(#{$content-min-width} - (#{$spacing-unit} * 2));
+        min-width:         calc(#{$content-min-width} - (#{$spacing-unit} * 2));
+    }
+}
+
+// Clearfix
+%clearfix {
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+.post {
+    margin-bottom: $spacing-unit;
+    @extend %clearfix;
+}
+
+.post p {
+    margin-top:    0;
+    margin-bottom: $spacing-unit * 0.8;
+}
+
+.post h1, h2, h3, h4, h5, h6 {
+    margin-top:    $spacing-unit * 0.9;
+    margin-bottom: $spacing-unit * 0.2;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $text-light-color;
+}
+
+.post-link {
+    display: block;
+}
