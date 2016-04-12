@@ -31,6 +31,21 @@ pre code {
 }
 
 // image
+img {
+    background: #fff;
+    padding: 8px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.23);
+    -moz-box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.23);
+    max-width: 95%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 .captioned-img {
     text-align: center;
     border: none;
@@ -78,4 +93,46 @@ pre code {
         margin-right: auto;
         float: none;
     }
+}
+
+// table
+table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.5;
+  font-size: 1.125rem;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: 12px;
+        line-height: 1.2;
+        vertical-align: top;
+        border-top: 1px solid #333;
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #333;
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: 2px solid #333;
+  }
 }

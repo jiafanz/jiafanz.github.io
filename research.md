@@ -4,16 +4,16 @@ permalink: /research/
 title: Research
 pubs:
 
-    - title:   "Paper title in 3-7 words that sound like Clingon"
-      author:  "M. McFly, D. Kirk, L. Skywalker, H.J. Potter, I. Jones, H. Houdini"
+    - title:   "Approach for Urban Popular Event Detection Using Mobile Crowdsourcing Data"
+      author:  "ZHANG Jia-fan;GUO Bin;LU Xin-jiang;YU Zhi-wen;ZHOU Xing-she"
       journal: "Transactions on Black Magic"
       note:    "(presented at Oz)"
       year:    "2016"
       url:     "http://publish-more-stuff.org"
       doi:     "http://dx.doi.org"
 
-    - title:   "Paper title in 3-7 words that sound like Clingon"
-      author:  "M. McFly, D. Kirk, L. Skywalker, H.J. Potter, I. Jones, H. Houdini"
+    - title:   "Trending Words Based Event Detection in Sina Weibo"
+      author:  "Lu, Xinjiang and Yu, Zhiwen and Guo, Bin and Zhang, Jiafan and Chin, Alvin and Tian, Jilei and Cao, Yang"
       journal: "Transactions on Black Magic"
       note:    "(presented at Oz)"
       year:    "2015"
