@@ -113,7 +113,7 @@ and images can be specified like so:
 
 ![example image](http://r-statistics.co/screenshots/ggplot_2.png "An exemplary image")
 
-Inline math equations go in like so: $e = mc^2$. Display
+Inline math equations go in like so: $\alpha$. Display
 math should get its own line and be put in in double-dollarsigns:
 
 $$
