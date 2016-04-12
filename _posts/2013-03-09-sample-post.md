@@ -113,9 +113,9 @@ A horizontal rule follows.
 
 and images can be specified like so:
 
-![example image](https://ankitsultana.me/accent/images/van-gogh.jpg "An exemplary image")
+![example image](http://ww4.sinaimg.cn/large/718a0257gw1ez2zkrq98ej20am0dndhs.jpg "An exemplary image")
 
-Inline math equations go in like so: $e = mc^2$ . Display
+Inline math equations go in like so: \$e = mc^2\$ . Display
 math should get its own line and be put in in double-dollarsigns:
 
 $$
