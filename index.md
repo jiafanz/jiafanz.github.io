@@ -18,4 +18,4 @@ permalink: /
 
 Northwestern Polytechnical University<br />
 Xi’an Shaanxi, 710072, P.R.China<br />
-Email: [zhangjiafanvv@163.com](mailto:zhangjiafanvv@rebel.com)
+Email: [zhangjiafanvv@163.com](mailto:zhangjiafanvv@163.com)
